@@ -1,0 +1,49 @@
+h1 {
+    color: blueviolet;
+}
+
+ button {
+     cursor: pointer;
+     margin: 35px;
+     padding: 35px;
+ }
+input {
+    cursor: pointer;
+}
+  .fileContainer {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.fileContainer input.upload {
+   
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0.02px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+.fileContainer [type=file] {
+    cursor: pointer;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    right: 0;
+    text-align: right;
+    top: 0;
+    border-radius: 25px;
+    color: gray;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-block: 2px solid gray;
+}
