@@ -45,5 +45,5 @@ app.get('/download',(req,res) => {
     res.download(file);
 })
 
-const PORT = 5000 || process.env.PORT;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const port = process.env.PORT;
+app.listen(port);
