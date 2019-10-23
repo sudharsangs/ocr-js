@@ -45,5 +45,8 @@ app.get('/download',(req,res) => {
     res.download(file);
 })
 
-const port = process.env.PORT;
-app.listen(port);
+var port = process.env.PORT || 8080;
+
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
